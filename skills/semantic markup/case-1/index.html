@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,90 +8,91 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header-title"><a class="header-main-link">Новости культуры</a></h1>
-        <nav class="header-nav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#">Новости</a></li>
-                <li class="nav-list-item"><a href="#">Обзоры</a></li>
-                <li class="nav-list-item"><a href="#">Музыка</a></li>
-                <li class="nav-list-item"><a href="#">Архитектура</a></li>
-                <li class="nav-list-item"><a href="#">Кино</a></li>
-                <li class="nav-list-item"><a href="#">Театр</a></li>
-                <li class="nav-list-item"><a href="#">Литература</a></li>
-                <li class="nav-list-item"><a href="#">Религия</a></li>
-                <li class="nav-list-item"><a href="#">Живопись</a></li>
+        <a href="#" class="header__main-link">Новости культуры</a>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Обзоры</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Музыка</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Архитектура</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Кино</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Театр</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Литература</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Религия</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Живопись</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="first-news">
-            <img src="/dog.jpg" alt="Логотип горы">
-            <h2 class="first-news-title">
-                Подводный отель
-            </h2>
-            <p class="first-news-subtitle">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aperiam nobis, illo eos necessitatibus ab earum architecto accusantium fuga at nihil praesentium dolorem aliquid quibusdam, incidunt enim magnam quos quia!
-            </p>
+    <main class="main">
+        <h1>Новостной сайт "Новости культуры"</h1>
+        <section class="main__news news">
+            <img src="grey.jpg" width="200"  alt="Значок гор на оранжевом фоне" class="news_img">
+            <h2 class="news__title">Подводный отель</h2>
+            <p class="news__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint veniam rerum quo tenetur aliquid explicabo fuga perferendis nesciunt debitis vitae.</p>
         </section>
-        <section class="overview">
-            <h2 class="overview-title">Обзоры</h2>
-            <ul class="overview-list">
-                <li class="overview-item">
-                    <img src="/dog.jpg" alt="Картина" class="overview-item-image">
-                    <h3 class="overview-item-title">"Шальные годы" Монпарнаса</h3>
-                    <p class="overview-item-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate, obcaecati sed nostrum asperiores eos assumenda dolores modi quibusdam aperiam!</p>
+        <section class="reviews">
+            <h2 class="reviews__title">Обзоры</h2>
+            <ul class="reviews__list">
+                <li class="reviews-item">
+                    <img src="grey.jpg" width="200"  alt="Картинка Монпарнаса" class="reviews__img">
+                    <h3 class="reviews__subtitle">"Шальные годы" Монпарнаса</h3>
+                    <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum beatae magni adipisci magnam est.</p>
                 </li>
-                <li class="overview-item">
-                    <img src="/dog.jpg" alt="Руки в глине" class="overview-item-image">
-                    <h3 class="overview-item-title">Анатомия за 30 секунд</h3>
-                    <p class="overview-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odio vel magnam laudantium doloribus iste quam maxime voluptatem laboriosam et!</p>
+                <li class="reviews-item">
+                    <img src="grey.jpg" width="200"  alt="Маленькая глинянная скульптура" class="reviews__img">
+                    <h3 class="reviews__subtitle">Анатомия за 30 секунд</h3>
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error rerum explicabo repellat maxime minus!</p>
                 </li>
-                <li class="overview-item">
-                    <img src="/dog.jpg" alt="Спектакль" class="overview-item-image">
-                    <h3 class="overview-item-title">Сферические чудаки</h3>
-                    <p class="overview-item-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, qui. A repudiandae repellendus, exercitationem eligendi nihil aspernatur assumenda ducimus officiis?</p>
+                <li class="reviews-item">
+                    <img src="grey.jpg" width="200"  alt="Сцена из спектакля" class="reviews__img">
+                    <h3 class="reviews__subtitle">Сферические чудаки</h3>
+                    <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quidem quaerat suscipit. Perferendis, vero distinctio.</p>
                 </li>
             </ul>
         </section>
-
         <section class="abonements">
-            <h2 class="abonements-title">Абонементы в театр</h2>
-            <ul class="abonements-list">
-                <li class="abonements-list-item">
-                    <h3 class="abonements-item-title">Скидка 50% на весь сезон 2020</h3>
-                    <p class="abonements-item-subtittle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, laudantium.</p>
+            <h2 class="abonements__title">Абонементы в театр</h2>
+            <ul class="abonements__list">
+                <li class="abonements item">
+                    <h3 class="abonements__subtitle">Скидка 50% на весь сезон 2020</h3>
+                    <p class="abonements__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis asperiores neque rem laboriosam odio.</p>
                 </li>
-                <li class="abonements-list-item">
-                    <h3 class="abonements-item-title">Места у сцены</h3>
-                    <p class="abonements-item-subtittle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, accusantium.</p>
+                <li class="abonements item">
+                    <h3 class="abonements__subtitle">Места у сцены</h3>
+                    <p class="abonements__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est tempore harum non repellendus provident nisi?</p>
                 </li>
-                <li class="abonements-list-item">
-                    <h3 class="abonements-item-title">Афтограф-сессия актёров</h3>
-                    <p class="abonements-item-subtittle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, fugiat!</p>
+                <li class="abonements item">
+                    <h3 class="abonements__subtitle">Афтограф-сессия актёров</h3>
+                    <p class="abonements__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque quasi ipsam possimus, mollitia a.</p>
                 </li>
             </ul>
-            <button class="btn">Смотреть</button>
+            <button class="abonements__button" type="button">Смотреть</button>
         </section>
     </main>
-    <footer>
-        <h2 class="footer-title">Новости культуры</h2>
-        <ul class="footer-list">
-            <li class="footer-list-item"><a href="">Новости</a></li>
-            <li class="footer-list-item"><a href="">Обзоры</a></li>
-            <li class="footer-list-item"><a href="">Музыка</a></li>
-            <li class="footer-list-item"><a href="">Архитектура</a></li>
-            <li class="footer-list-item"><a href="">Кино</a></li>
-            <li class="footer-list-item"><a href="">Театр</a></li>
-            <li class="footer-list-item"><a href="">Литература</a></li>
-            <li class="footer-list-item"><a href="">Религия</a></li>
-            <li class="footer-list-item"><a href="">Живопись</a></li>
-        </ul>
-        <hr>
-        <ul class="footer-social-list">
-            <li class="social-list-item"><a href="#">Instagram</a></li>
-            <li class="social-list-item"><a href="#">Facebook</a></li>
-            <li class="social-list-item"><a href="#">Twitter</a></li>
-        </ul>
+    <footer class="footer">
+        <h2 class="footer__title">Новости культуры</h2>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Обзоры</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Музыка</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Архитектура</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Кино</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Театр</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Литература</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Религия</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Живопись</a></li>
+            </ul>
+        </nav>
+        <hr class="footer__hr">
+        <section class="footer__social social">
+            <h2 class="footer__title">Ссылки на социальные сети</h2>
+            <ul class="social__list">
+                <li class="social__item"><a href="#" class="social__link">Instagram</a></li>
+                <li class="social__item"><a href="#" class="social__link">Facebook</a></li>
+                <li class="social__item"><a href="#" class="social__link">Twitter</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
 </html>

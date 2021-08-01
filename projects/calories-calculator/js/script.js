@@ -10,7 +10,9 @@ let resetBtn = document.querySelector('.form__reset-button');
 
 let form = document.querySelector('.counter__form');
 let counterResult = document.querySelector('.counter__result');
-console.log(form.offsetTop)
+let caloriesValue = Array.from(counterResult.querySelectorAll('li span'));
+
+
 userData.forEach(element => {
     element.oninput = () => {
         enableResetButton(element);
@@ -32,6 +34,12 @@ form.addEventListener('submit', (event) => {
     window.scrollTo(0, 1000);
 }) 
 
+submitBtn.addEventListener('click', () => {
+    for(let value of caloriesValue){
+        value.textContent = calculateFormula(userData);
+    }
+})
+
 function enableResetButton(input){
     if(input.value.trim() !== ''){
         resetBtn.removeAttribute('disabled')
@@ -47,3 +55,9 @@ function enableSubmitButton(inputArray) {
     return true;
 }
 
+function calculateFormula(userData) {
+    let calc = (10 * userData[2].value) + (6.25 * userData[1].value) - (5 * userData[0].value) - 161;
+    return calc
+}
+/* N = (10 × вес в килограммах) + (6,25 × рост в сантиметрах) − (5 × возраст в
+    годах) − 161 */

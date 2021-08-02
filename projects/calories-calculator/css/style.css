@@ -60,10 +60,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* 
 html {
   min-width: 1160px;
-}
+} */
 
 body {
   width: 100%;
@@ -180,6 +180,23 @@ input[type="number"] {
   margin: 0 auto;
   padding-right: 300px;
   padding-left: 300px;
+}
+
+@media (max-width:1200px) {
+  .container{
+    padding: 0;
+    width: 100%;
+  }
+  .inputs-group{
+    flex-wrap: wrap;
+  }
+  h2{
+    text-align: center;
+  }
+  .counter__result-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .container--no-padding {

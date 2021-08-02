@@ -40,9 +40,9 @@ submitBtn.addEventListener('click', () => {
     let usrAct = checkUserActivity(userActivity);
     
     let userCalories = calculateFormula(userData, currentGender.value, usrAct.value);
-    caloriesValue[1].textContent = Math.trunc(userCalories);
+    caloriesValue[0].textContent = Math.trunc(userCalories);
 
-    caloriesValue[0].textContent = Math.trunc(userCalories - (userCalories * 15 / 100));
+    caloriesValue[1].textContent = Math.trunc(userCalories - (userCalories * 15 / 100));
 
     caloriesValue[2].textContent = Math.trunc(userCalories + (userCalories * 15 / 100));
     

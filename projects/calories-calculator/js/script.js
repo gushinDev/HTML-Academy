@@ -38,8 +38,8 @@ submitBtn.addEventListener('click', () => {
     
     let currentGender = userGender[0].checked ? userGender[0] : userGender[1]; 
     let usrAct = checkUserActivity(userActivity);
-    
     let userCalories = calculateFormula(userData, currentGender.value, usrAct.value);
+    
     caloriesValue[0].textContent = Math.trunc(userCalories);
 
     caloriesValue[1].textContent = Math.trunc(userCalories - (userCalories * 15 / 100));
@@ -103,13 +103,3 @@ function checkUserActivity(userActivity){
         } 
     }
 }
-/* N = (10 × вес в килограммах) + (6,25 × рост в сантиметрах) − (5 × возраст в
-    годах) − 161 
-    +5 form men*/
-    /* Минимальная: 1.2.
-Низкая: 1.375.
-Средняя: 1.55.
-Высокая: 1.725.
-Очень высокая: 1.9. */
-/* Набор веса: прибавляем 15% от нормы к этой норме.
-Сброс веса: вычитаем 15% от нормы из этой нормы. */

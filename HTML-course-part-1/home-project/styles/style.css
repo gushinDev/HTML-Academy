@@ -1,0 +1,217 @@
+body{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+a, button{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+button{
+    border-radius: 3px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    border: none;
+    border-bottom:2px solid #ccc;
+}
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #ccc;
+    padding-top: 49px;
+    background-image: url('../img/nerds-index-slide1.png');
+    background-repeat: no-repeat;
+    background-position: 67% bottom;
+    padding-bottom: 80px;
+}
+.header__nav{
+    display: flex;
+    margin-bottom: 78px;
+}
+.header__button{
+    margin-left: auto;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.header__list{
+    width: 438px;
+    margin-left: 202px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+.header__subtitle{
+    line-height: 24px;
+    color: #283136; 
+    margin-top: 25px;
+    margin-bottom: 26px;  
+    max-width: 400px;
+}
+
+.header__subtitle_big{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000;
+    
+}
+.header__link{
+    color: white;
+    background-color:#FB565A;
+    padding: 17px 54px 15px 54px;
+    margin-top: 13px;
+    display: inline-block;
+}
+.products{
+    padding-top: 80px;
+}
+
+.products__list{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+.products__item{
+    width: 300px;
+}
+.products__card-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+.products__card-description{
+    max-width: 260px;
+    line-height: 23px;
+    margin-bottom: 33px;
+}
+.products__button{
+    color: white;
+    padding: 17px 40px 15px 40px;
+}
+.products__list li:nth-child(1) button{
+    background-color: #FB565A;
+}
+.products__list li:nth-child(2) button{
+    background-color: #00CA74;
+}
+.products__list li:nth-child(3) button{
+    background-color: #EFC849;
+}
+
+.products hr{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    background-color: #eee;
+    height: 2px;
+    border: none;
+
+}
+
+.about__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__wrapper-left{
+    width: 650px;
+}
+.about__wrapper-right{
+    position: relative;
+    top: -35px;
+    width: 360px;
+}
+
+.about__title{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 34px;
+    margin-top: 2px;
+}
+.about__subtitle{
+    line-height: 24px;
+}
+
+.about__subtitle_bold{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.about__wrapper-right .about__subtitle_bold{
+    position: relative;
+    top: -4px;
+    left: 17px;
+}
+
+.about__list{
+    padding-left: 36px;
+}
+.about__item{
+    margin-bottom: 30px;
+}
+
+.about__table{
+    line-height: 18px;
+    margin-top: -10px;
+}
+sup{
+    font-size: 25px;
+}
+.table__bottom{
+    padding-top: 10px;
+    padding-left: -5px;
+    padding-right: 25px;
+}
+
+.table-bold{
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+.about hr {
+    margin-top: 40px;
+}
+
+.partners{
+    padding-top: 46px;
+}
+.partners__list{
+    display: flex;
+    justify-content: space-between;
+    width: 1070px;
+    margin: 0 auto;
+    align-items: start;
+}

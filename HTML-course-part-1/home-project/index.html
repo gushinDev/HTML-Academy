@@ -4,90 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Студия Nerds</title>
 </head>
 <body>
     <header class="header">
-        <img src="img/nerds-logo.svg" alt="Логотип компании" class="header__logo">
-        <ul class="header__list">
-            <li class="header__item"><a href="#" class="header__links">Студия</a></li>
-            <li class="header__item"><a href="#" class="header__links">Клиенты</a></li>
-            <li class="header__item"><a href="#" class="header__links">Магазин</a></li>
-            <li class="header__item"><a href="#" class="header__links">Контакты</a></li>
-        </ul>
-        <button class="header__button">Корзина</button>
+        <div class="container">
+            <nav class="header__nav">
+                <img src="img/nerds-logo.svg" alt="Логотип компании" class="header__logo" width="159">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__links">Студия</a></li>
+                    <li class="header__item"><a href="#" class="header__links">Клиенты</a></li>
+                    <li class="header__item"><a href="#" class="header__links">Магазин</a></li>
+                    <li class="header__item"><a href="#" class="header__links">Контакты</a></li>
+                </ul>
+                <button class="header__button">Корзина</button>
+            </nav>
+            <h1 class="header__title visually-hidden">Дизайн студия Nerds</h1>
+            <p class="header__subtitle"><span class="header__subtitle_big">Долго, дорого, скрупулезно.</span></p>
+            <p class="header__subtitle">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="header__link">Узнать больше</a>
+        </div>
     </header>
     <main class="main">
-        <h1 class="main__title">Дизайн студия Nerds</h1>
-        <section class="main__overview overview">
-            <h2 class="overview__title">Узнать больше о студии</h2>
-            <p class="overview__subtitle"><span class="overview__subtitle_big">Долго, дорого, скурпулезно</span></p>
-            <p class="overview__subtitle">Матетически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="overview__link">Узнать больше</a>
-        </section>
+            <section class="products">
+                <div class="container">
+                    <h2 class="products__title visually-hidden">Наши услуги</h2>
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <img src="img/products/illustration-1.jpg" alt="Ноутбук" class="products__image">
+                            <h3 class="products__card-title">Веб-сайты</h3>
+                            <p class="products__card-description">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+                            <button class="products__button btn-1">Заказать</button>
+                        </li>
+                        <li class="products__item">
+                            <img src="img/products/illustration-2.jpg" alt="Мобильные телефоны" class="products__image">
+                            <h3 class="products__card-title">Приложения</h3>
+                            <p class="products__card-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+                            <button class="products__button btn-2">Заказать</button>
+                        </li>
+                        <li class="products__item">
+                            <img src="img/products/illustration-3.jpg" alt="Презентация на экране" class="products__image">
+                            <h3 class="products__card-title">Презентации</h3>
+                            <p class="products__card-description">Вы даже не подозреваете, насколько вы изумительны!</p>
+                            <button class="products__button btn-3">Заказать</button>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </section>
 
-        <section class="products">
-            <h2 class="products__title_hidden">Наши услуги</h2>
-            <ul class="products__list">
-                <li class="products__item">
-                    <img src="img/products/illustration-1.jpg" alt="Ноутбук" class="products__image">
-                    <h3 class="products__card-title">Веб-сайты</h3>
-                    <p class="products__card-description">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-                    <button class="products__button">Заказать</button>
-                </li>
-                <li class="products__item">
-                    <img src="img/products/illustration-2.jpg" alt="Мобильные телефоны" class="products__image">
-                    <h3 class="products__card-title">Приложения</h3>
-                    <p class="products__card-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <button class="products__button">Заказать</button>
-                </li>
-                <li class="products__item">
-                    <img src="img/products/illustration-3.jpg" alt="Презентация на экране" class="products__image">
-                    <h3 class="products__card-title">Презентации</h3>
-                    <p class="products__card-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <button class="products__button">Заказать</button>
-                </li>
-            </ul>
-        </section>
-
-        <section class="about">
-            <h2 class="about__title">Мы — маленькая, но гордаядизайн-студия из Краснодара.</h2>
-            <p class="about__subtitle">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="about__subtitle about__subtitle_bold">Выполняем заказы на разработку:</p>
-            <ul class="about__list">
-                <li class="about__item">Веб-сайтов любой сложности</li>
-                <li class="about__item">Мобильных приложений для iOS и Android</li>
-                <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-            <img src="img/nerds-illustration.png" alt="Праздничный логотип компании" class="about__img">
-            <p class="about__subtitle about__subtitle_bold">с 2004 года Любим точность во всем:</p>
-            <table class="about__table">
-                <tr>
-                    <td>146%</td>
-                    <td>100%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Уровень самоотдачи</td>
-                    <td>Соблюдение сроков</td>
-                    <td>Минимальная предоплата</td>
-                </tr>
-            </table>
-        </section>
-        <section class="partners">
-            <h2 class="partners__title">Наши партнеры</h2>
-            <ul class="partners__list">
-                <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-1.png" alt="Логотип HTML Academy" class="partners__image"></a></li>
-                <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-2.png" alt="Логотип барбершоп Бородинский" class="partners__image"></a></li>
-                <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-3.png" alt="Логотип магазин Pink" class="partners__image"></a></li>
-                <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-4.png" alt="Логотип кафе Mishka" class="partners__image"></a></li>
-            </ul>
-        </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__wrapper-left">
+                            <h2 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                            <p class="about__subtitle">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                            <p class="about__subtitle about__subtitle_bold">Выполняем заказы на разработку:</p>
+                            <ul class="about__list">
+                                <li class="about__item">Веб-сайтов любой сложности</li>
+                                <li class="about__item">Мобильных приложений для iOS и Android</li>
+                                <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+                            </ul>
+                        </div>
+                    <div class="about__wrapper-right">
+                        <img src="img/nerds-illustration.png" alt="Праздничный логотип компании" class="about__img">
+                        <p class="about__subtitle about__subtitle_bold">с 2004 года Любим точность во всем:</p>
+                        <table class="about__table">
+                            <tr>
+                                <td class="table-bold">146<sup>%</sup></td>
+                                <td class="table-bold">100<sup>%</sup></td>
+                                <td class="table-bold">50<sup>%</sup></td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom">Уровень самоотдачи</td>
+                                <td class="table__bottom">Соблюдение сроков</td>
+                                <td class="table__bottom">Минимальная предоплата</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                <h2 class="partners__title visually-hidden">Наши партнеры</h2>
+                <ul class="partners__list">
+                    <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-1.png" alt="Логотип HTML Academy" class="partners__image"></a></li>
+                    <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-2.png" alt="Логотип барбершоп Бородинский" class="partners__image"></a></li>
+                    <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-3.png" alt="Логотип магазин Pink" class="partners__image"></a></li>
+                    <li class="partners__item"><a class="partners__link"><img src="img/partners/logo-4.png" alt="Логотип кафе Mishka" class="partners__image"></a></li>
+                </ul>
+            </div>
+            </section>
+        
     </main>
     <footer class="footer">
         <section class="footer__address address">
-            <h2 class="footer__title">Наши контакты</h2>
+            <h2 class="footer__title visually-hidden">Наши контакты</h2>
             <div class="address_write-us">
                 <p class="write-us__text">NЁRDS design studio</p>
                 <p class="write-us__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -96,7 +114,7 @@
             </div>
         </section>
         <section class="footer__bottom bottom">
-            <h2 class="bottom__social">Наши социальные сети</h2>
+            <h2 class="bottom__social visually-hidden">Наши социальные сети</h2>
             <ul class="bottom__list">
                 <li class="bottom__item">
                     <a href="#" class="bottom__link">Вконтакте</a>
